@@ -1,0 +1,29 @@
+{
+  "testUser": {
+    "username": "testuser",
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "test@test.com",
+    "password": "testpass",
+    "phone": "1234567890",
+    "userStatus": 1
+  },
+  "anotherTestUser": {
+    "username": "testuser2",
+    "firstName": "Test2",
+    "lastName": "User2",
+    "email": "test2@test.com",
+    "password": "testpass2",
+    "phone": "0987654321",
+    "userStatus": 1
+  },
+  "updatedUser": {
+    "username": "testuser",
+    "firstName": "Updated",
+    "lastName": "User",
+    "email": "updated@test.com",
+    "password": "updatedpass",
+    "phone": "9876543210",
+    "userStatus": 1
+  }
+} 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Аппендер для вывода в консоль -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{36}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Аппендер для результатов тестов -->
+    <appender name="TEST-RESULTS" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[TEST] %highlight(%-5level) %cyan(%logger{0}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Логирование тестов -->
+    <logger name="com.petstore.client" level="DEBUG">
+        <appender-ref ref="TEST-RESULTS" />
+    </logger>
+
+    <!-- Логирование ошибок -->
+    <logger name="com.petstore.client" level="ERROR">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+    <!-- Логирование HTTP запросов -->
+    <logger name="io.restassured" level="DEBUG">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+    <!-- Логгеры для утилитных классов -->
+    <logger name="com.petstore.util" level="ERROR">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+    <!-- Корневой логгер -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration> 

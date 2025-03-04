@@ -1,0 +1,26 @@
+{
+  "testOrder": {
+    "id": 1,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2024-03-20T10:00:00Z",
+    "status": "placed",
+    "complete": true
+  },
+  "invalidOrder": {
+    "id": -1,
+    "petId": -1,
+    "quantity": -1,
+    "shipDate": "invalid-date",
+    "status": "invalid",
+    "complete": null
+  },
+  "updatedOrder": {
+    "id": 1,
+    "petId": 2,
+    "quantity": 2,
+    "shipDate": "2024-03-21T10:00:00Z",
+    "status": "approved",
+    "complete": true
+  }
+} 

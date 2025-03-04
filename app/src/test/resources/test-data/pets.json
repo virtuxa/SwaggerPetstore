@@ -1,0 +1,49 @@
+{
+  "testPet": {
+    "id": 0,
+    "category": {
+      "id": 0,
+      "name": "test category"
+    },
+    "name": "test pet",
+    "photoUrls": [
+      "http://test.com/photo.jpg"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "test tag"
+      }
+    ],
+    "status": "available"
+  },
+  "invalidPet": {
+    "id": -1,
+    "category": {
+      "id": -1,
+      "name": ""
+    },
+    "name": "",
+    "photoUrls": [],
+    "tags": [],
+    "status": "invalid"
+  },
+  "updatedPet": {
+    "id": 0,
+    "category": {
+      "id": 1,
+      "name": "updated category"
+    },
+    "name": "updated pet",
+    "photoUrls": [
+      "http://test.com/updated-photo.jpg"
+    ],
+    "tags": [
+      {
+        "id": 1,
+        "name": "updated tag"
+      }
+    ],
+    "status": "pending"
+  }
+} 
